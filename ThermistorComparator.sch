@@ -13,272 +13,186 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 7825 4625 2    50   Output ~ 0
+Text GLabel 6875 4550 2    50   Output ~ 0
 IN+
-Text GLabel 7450 4425 1    50   Input ~ 0
+Text GLabel 6500 4350 1    50   Input ~ 0
 V+
 $Sheet
-S 9250 4750 650  650 
+S 8175 4650 650  650 
 U 6255B46C
 F0 "Temperature Sensing" 50
 F1 "TSense.sch" 50
-F2 "OUT" U L 9250 5000 50 
+F2 "OUT" U L 8175 4900 50 
 $EndSheet
-$Comp
-L Device:R R2
-U 1 1 625C6ABB
-P 8850 4750
-F 0 "R2" H 8920 4796 50  0000 L CNN
-F 1 "10k" H 8920 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8780 4750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/418/8/ENG_DS_1773200_N2-1954016.pdf" H 8850 4750 50  0001 C CNN
-	1    8850 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 5000 8850 4900
-Text GLabel 8850 4550 1    50   Input ~ 0
-V+
-Wire Wire Line
-	8850 4600 8850 4550
-Text Label 8850 5000 2    50   ~ 0
+Text Label 7775 4900 2    50   ~ 0
 SIG
 Wire Notes Line
-	7150 5650 8300 5650
-Wire Notes Line
-	8300 5650 8300 4250
-Wire Notes Line
-	8300 4250 7150 4250
-Wire Notes Line
-	7150 4250 7150 5650
-Wire Notes Line
-	8600 4250 10700 4250
-Wire Notes Line
-	10700 5650 8600 5650
-Text Notes 7750 5750 0    50   ~ 0
+	7350 4150 6200 4150
+Text Notes 6800 5675 0    50   ~ 0
 Voltage Divider\n
-Text Notes 9500 5900 0    50   ~ 0
+Text Notes 8100 5825 0    50   ~ 0
 Thermistor + Comparator Block\n\n\n
 Wire Wire Line
-	8850 5000 9000 5000
-$Comp
-L power:GND #PWR0104
-U 1 1 626809CB
-P 4200 4800
-F 0 "#PWR0104" H 4200 4550 50  0001 C CNN
-F 1 "GND" H 4205 4627 50  0000 C CNN
-F 2 "" H 4200 4800 50  0001 C CNN
-F 3 "" H 4200 4800 50  0001 C CNN
-	1    4200 4800
-	1    0    0    -1  
-$EndComp
-Text Label 4000 4700 2    50   ~ 0
+	7775 4900 7925 4900
+Text Label 4000 4600 2    50   ~ 0
 FAULT
-Text Notes 3700 5450 0    50   ~ 0
+Text Notes 3700 5350 0    50   ~ 0
 GND = fault\nfloat = No fault/12V 
-Text Notes 9150 4100 0    50   ~ 0
+Text Notes 9125 4100 0    50   ~ 0
 BUCK\n\n
-Text Notes 5550 5350 0    50   ~ 0
+Text Notes 5550 5250 0    50   ~ 0
 Opto-Coupler\n
 Wire Notes Line
 	3700 3900 3700 1850
 Wire Notes Line
-	3700 5250 3700 4250
+	3700 5150 3700 4150
 Wire Notes Line
-	6050 5250 3700 5250
+	6050 5150 3700 5150
 Wire Notes Line
-	6050 4250 6050 5250
+	6050 4150 6050 5150
 Wire Notes Line
-	3700 4250 6050 4250
+	3700 4150 6050 4150
 Wire Wire Line
-	5500 4850 5650 4850
+	5500 4750 5650 4750
 $Comp
 L Device:R R1
 U 1 1 625DFC4C
-P 5350 4850
-F 0 "R1" V 5143 4850 50  0000 C CNN
-F 1 "2.2k" V 5234 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5280 4850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/348/ROHM_S_A0011075102_1-2563252.pdf" H 5350 4850 50  0001 C CNN
-	1    5350 4850
+P 5350 4750
+F 0 "R1" V 5143 4750 50  0000 C CNN
+F 1 "1.8k" V 5234 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5280 4750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 5350 4750 50  0001 C CNN
+	1    5350 4750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5050 4550 5650 4550
+	5050 4450 5650 4450
 Wire Wire Line
-	5050 4700 5050 4550
+	5050 4600 5050 4450
 Wire Wire Line
-	5050 4850 5200 4850
+	5050 4750 5200 4750
 Wire Wire Line
-	5050 4850 5050 4800
+	5050 4750 5050 4700
 $Comp
 L LHRE_Component_Library:TLP170J U1
 U 1 1 625DBDDE
-P 4650 4750
-F 0 "U1" H 4675 4435 50  0000 C CNN
-F 1 "TLP171A" H 4675 4526 50  0000 C CNN
-F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 4500 4800 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/408/TLP171A_datasheet_en_20191011-1108729.pdf" H 4500 4800 50  0001 C CNN
-	1    4650 4750
+P 4650 4650
+F 0 "U1" H 4675 4335 50  0000 C CNN
+F 1 "TLP171A" H 4675 4426 50  0000 C CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 4500 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/408/TLP171A_datasheet_en_20191011-1108729.pdf" H 4500 4700 50  0001 C CNN
+	1    4650 4650
 	-1   0    0    1   
 $EndComp
-Text GLabel 5650 4850 2    50   Input ~ 0
+Text GLabel 5650 4750 2    50   Input ~ 0
 V+
-Text Label 5650 4550 0    50   ~ 0
+Text Label 5650 4450 0    50   ~ 0
 SIG
 Wire Wire Line
-	7800 4625 7800 4725
+	6850 4550 6850 4650
 Wire Wire Line
-	7800 4800 7950 4800
+	6850 4725 7000 4725
 Wire Wire Line
-	7800 4625 7825 4625
+	6850 4550 6875 4550
 Wire Wire Line
-	4200 4800 4000 4800
+	4200 4700 4000 4700
 Wire Wire Line
-	4000 4800 4000 4850
-Connection ~ 4200 4800
+	4000 4700 4000 4750
 Wire Wire Line
-	9000 5000 9000 5100
-Connection ~ 9000 5000
+	7925 4900 7925 5000
+Connection ~ 7925 4900
 Wire Wire Line
-	9000 5000 9250 5000
+	7925 4900 8175 4900
 $Comp
 L Connector:TestPoint TP1
 U 1 1 626C628F
-P 4000 4850
-F 0 "TP1" H 4225 5000 50  0000 R CNN
-F 1 "Test_gnd" H 4225 5075 50  0000 R CNN
-F 2 "LHRE Footprint Library:Test_Point_Tiny" H 4200 4850 50  0001 C CNN
-F 3 "~" H 4200 4850 50  0001 C CNN
-	1    4000 4850
+P 4000 4750
+F 0 "TP1" H 4225 4900 50  0000 R CNN
+F 1 "Test_gnd" H 4225 4975 50  0000 R CNN
+F 2 "LHRE Footprint Library:Test_Point_Tiny" H 4200 4750 50  0001 C CNN
+F 3 "~" H 4200 4750 50  0001 C CNN
+	1    4000 4750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:TestPoint TP4
 U 1 1 626C7575
-P 7950 4800
-F 0 "TP4" H 7900 4925 50  0000 R CNN
-F 1 "Test_in+" H 7975 5025 50  0000 R CNN
-F 2 "LHRE Footprint Library:Test_Point_Tiny" H 8150 4800 50  0001 C CNN
-F 3 "~" H 8150 4800 50  0001 C CNN
-	1    7950 4800
+P 7000 4725
+F 0 "TP4" H 6950 4850 50  0000 R CNN
+F 1 "Test_in+" H 7025 4950 50  0000 R CNN
+F 2 "LHRE Footprint Library:Test_Point_Tiny" H 7200 4725 50  0001 C CNN
+F 3 "~" H 7200 4725 50  0001 C CNN
+	1    7000 4725
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:TestPoint TP3
 U 1 1 626C89E3
-P 9000 5100
-F 0 "TP3" H 9300 5250 50  0000 R CNN
-F 1 "Test_sig" H 9300 5325 50  0000 R CNN
-F 2 "LHRE Footprint Library:Test_Point_Tiny" H 9200 5100 50  0001 C CNN
-F 3 "~" H 9200 5100 50  0001 C CNN
-	1    9000 5100
+P 7925 5000
+F 0 "TP3" H 8225 5150 50  0000 R CNN
+F 1 "Test_sig" H 8225 5225 50  0000 R CNN
+F 2 "LHRE Footprint Library:Test_Point_Tiny" H 8125 5000 50  0001 C CNN
+F 3 "~" H 8125 5000 50  0001 C CNN
+	1    7925 5000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4200 4700 4000 4700
+	4200 4600 4000 4600
 Wire Wire Line
-	4000 4700 4000 4650
+	4000 4600 4000 4550
 $Comp
 L Connector:TestPoint TP7
 U 1 1 626DB04C
-P 4000 4650
-F 0 "TP7" H 4025 4875 50  0000 L CNN
-F 1 "Test_fault" H 4025 4800 50  0000 L CNN
-F 2 "LHRE Footprint Library:Test_Point_Tiny" H 4200 4650 50  0001 C CNN
-F 3 "~" H 4200 4650 50  0001 C CNN
-	1    4000 4650
+P 4000 4550
+F 0 "TP7" H 4025 4775 50  0000 L CNN
+F 1 "Test_fault" H 4025 4700 50  0000 L CNN
+F 2 "LHRE Footprint Library:Test_Point_Tiny" H 4200 4550 50  0001 C CNN
+F 3 "~" H 4200 4550 50  0001 C CNN
+	1    4000 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Potentiometer RV1
 U 1 1 63BB2A59
-P 7450 4600
-F 0 "RV1" H 7380 4646 50  0000 R CNN
-F 1 "1.9k" H 7380 4555 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 7450 4600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/54/3299-776927.pdf" H 7450 4600 50  0001 C CNN
-	1    7450 4600
+P 6500 4525
+F 0 "RV1" H 6430 4571 50  0000 R CNN
+F 1 "1.9k" H 6430 4480 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 6500 4525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/3299-776927.pdf" H 6500 4525 50  0001 C CNN
+	1    6500 4525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 5100 7600 5350
+	6650 5025 6650 5275
 Wire Wire Line
-	7600 5350 7450 5350
+	6650 5275 6500 5275
 $Comp
 L Device:R_Potentiometer RV2
 U 1 1 63BB3E1A
-P 7450 5100
-F 0 "RV2" H 7380 5146 50  0000 R CNN
-F 1 "1.1k" H 7380 5055 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 7450 5100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/54/3299-776927.pdf" H 7450 5100 50  0001 C CNN
-	1    7450 5100
+P 6500 5025
+F 0 "RV2" H 6430 5071 50  0000 R CNN
+F 1 "1.1k" H 6430 4980 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 6500 5025 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/3299-776927.pdf" H 6500 5025 50  0001 C CNN
+	1    6500 5025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 4600 7600 4725
+	6650 4525 6650 4650
 Wire Wire Line
-	7600 4875 7450 4875
+	6650 4800 6500 4800
 Wire Wire Line
-	7450 4875 7450 4950
+	6500 4800 6500 4875
 Wire Wire Line
-	7600 4725 7800 4725
-Connection ~ 7600 4725
+	6650 4650 6850 4650
+Connection ~ 6650 4650
 Wire Wire Line
-	7600 4725 7600 4875
-Connection ~ 7800 4725
+	6650 4650 6650 4800
+Connection ~ 6850 4650
 Wire Wire Line
-	7800 4725 7800 4800
+	6850 4650 6850 4725
 Wire Wire Line
-	7450 4425 7450 4450
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 626BDE54
-P 1650 4200
-F 0 "#FLG0102" H 1650 4275 50  0001 C CNN
-F 1 "PWR_FLAG" H 1650 4373 50  0000 C CNN
-F 2 "" H 1650 4200 50  0001 C CNN
-F 3 "~" H 1650 4200 50  0001 C CNN
-	1    1650 4200
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 626BDE4E
-P 1650 4250
-F 0 "#PWR0105" H 1650 4000 50  0001 C CNN
-F 1 "GND" H 1655 4077 50  0000 C CNN
-F 2 "" H 1650 4250 50  0001 C CNN
-F 3 "" H 1650 4250 50  0001 C CNN
-	1    1650 4250
-	1    0    0    -1  
-$EndComp
-Connection ~ 1650 4200
-Wire Wire Line
-	1650 4200 1650 4250
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 63C5E9E4
-P 1100 4300
-F 0 "J3" H 1018 3975 50  0000 C CNN
-F 1 "pwr_conn" H 1018 4066 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 1100 4300 50  0001 C CNN
-F 3 "~" H 1100 4300 50  0001 C CNN
-	1    1100 4300
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 63C655F2
-P 1300 4300
-F 0 "#FLG01" H 1300 4375 50  0001 C CNN
-F 1 "PWR_FLAG" H 1300 4473 50  0000 C CNN
-F 2 "" H 1300 4300 50  0001 C CNN
-F 3 "~" H 1300 4300 50  0001 C CNN
-	1    1300 4300
-	-1   0    0    1   
-$EndComp
+	6500 4350 6500 4375
 $Comp
 L Device:C Cin1
 U 1 1 63C6C48F
@@ -290,11 +204,6 @@ F 3 "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc
 	1    5550 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 1350 4300 2    50   BiDi ~ 0
-Vin
-Wire Wire Line
-	1300 4300 1350 4300
-Connection ~ 1300 4300
 Text GLabel 5450 2650 0    50   Input ~ 0
 Vin
 $Comp
@@ -344,8 +253,6 @@ F 3 "" H 5750 3250 50  0001 C CNN
 $EndComp
 NoConn ~ 6100 2650
 Wire Wire Line
-	1300 4200 1650 4200
-Wire Wire Line
 	5450 2550 5550 2550
 Wire Wire Line
 	5550 2550 5550 2650
@@ -361,7 +268,7 @@ U 1 1 63CCECA2
 P 4800 2750
 F 0 "D1" H 5250 2185 50  0000 C CNN
 F 1 "SBR3U100LP-7" H 5250 2276 50  0000 C CNN
-F 2 "" H 5550 2850 50  0001 L CNN
+F 2 "LHRE Footprint Library:SBR3U100LP7" H 5550 2850 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/SBR3U100LP.pdf" H 5550 2750 50  0001 L CNN
 F 4 "Diodes Inc SBR3U100LP-7 Switching Diode, 8-Pin U-DFN3030" H 5550 2650 50  0001 L CNN "Description"
 F 5 "0.63" H 5550 2550 50  0001 L CNN "Height"
@@ -467,8 +374,8 @@ U 1 1 63C6AAA4
 P 6100 2450
 F 0 "U12" H 6900 2837 60  0000 C CNN
 F 1 "LTC3637IMSE-PBF" H 6900 2731 60  0000 C CNN
-F 2 "" H 6900 2690 60  0001 C CNN
-F 3 "" H 6100 2450 60  0000 C CNN
+F 2 "LHRE Footprint Library:LTC3637IMSE-PBF" H 6900 2690 60  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/609/ltc3637-2821739.pdf" H 6100 2450 60  0001 C CNN
 	1    6100 2450
 	1    0    0    -1  
 $EndComp
@@ -543,12 +450,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR03
 U 1 1 63CA291C
-P 7450 5350
-F 0 "#PWR03" H 7450 5100 50  0001 C CNN
-F 1 "GND" H 7455 5177 50  0000 C CNN
-F 2 "" H 7450 5350 50  0001 C CNN
-F 3 "" H 7450 5350 50  0001 C CNN
-	1    7450 5350
+P 6500 5275
+F 0 "#PWR03" H 6500 5025 50  0001 C CNN
+F 1 "GND" H 6505 5102 50  0000 C CNN
+F 2 "" H 6500 5275 50  0001 C CNN
+F 3 "" H 6500 5275 50  0001 C CNN
+	1    6500 5275
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -558,51 +465,179 @@ Wire Notes Line
 Wire Notes Line
 	9350 1850 9350 3900
 Wire Notes Line
-	8600 4250 8600 5650
-Wire Notes Line
-	10700 4250 10700 5650
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 63D21687
-P 1100 3750
-F 0 "J2" H 1018 3425 50  0000 C CNN
-F 1 "i/o" H 1018 3516 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 1100 3750 50  0001 C CNN
-F 3 "~" H 1100 3750 50  0001 C CNN
-	1    1100 3750
-	-1   0    0    1   
-$EndComp
-Text Label 1300 3650 0    50   ~ 0
-FAULT
-Text Label 1300 3750 0    50   ~ 0
-FAULT
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 63D22F95
-P 1100 3200
-F 0 "J1" H 1018 2875 50  0000 C CNN
-F 1 "i/o_unique" H 1018 2966 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 1100 3200 50  0001 C CNN
-F 3 "~" H 1100 3200 50  0001 C CNN
-	1    1100 3200
-	-1   0    0    1   
-$EndComp
-Text Label 1300 3100 0    50   ~ 0
-FAULT
-Text Label 1300 3200 0    50   ~ 0
-FAULT
-NoConn ~ 7450 4750
-NoConn ~ 7450 5250
+	7525 4150 7525 5550
+NoConn ~ 6500 4675
+NoConn ~ 6500 5175
 Wire Wire Line
 	8800 2900 8900 2900
+Text Label 4000 4700 2    50   ~ 0
+GND
+Text Label 2475 3400 0    50   ~ 0
+FAULT
+Text Label 2475 3500 0    50   ~ 0
+FAULT
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 63D21687
+P 2275 3400
+F 0 "J2" H 2275 3000 50  0000 C CNN
+F 1 "UNIQUE_I/O" H 2250 3075 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0410_2x02-1MP_P3.00mm_Horizontal" H 2275 3400 50  0001 C CNN
+F 3 "~" H 2275 3400 50  0001 C CNN
+	1    2275 3400
+	-1   0    0    1   
+$EndComp
+Text Label 2475 3200 0    50   ~ 0
+GND
+Text Label 2475 3300 0    50   ~ 0
+GND
 Wire Notes Line
-	900  2750 900  4600
+	3175 5000 3175 2200
 Wire Notes Line
-	900  4600 2000 4600
+	2050 5000 3175 5000
 Wire Notes Line
-	2000 4600 2000 2750
+	2050 2200 2050 5000
+Text Label 2475 2625 0    50   ~ 0
+GND
+Text Label 2475 2525 0    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 626BDE54
+P 2825 3950
+F 0 "#FLG0102" H 2825 4025 50  0001 C CNN
+F 1 "PWR_FLAG" H 2825 4123 50  0000 C CNN
+F 2 "" H 2825 3950 50  0001 C CNN
+F 3 "~" H 2825 3950 50  0001 C CNN
+	1    2825 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 626BDE4E
+P 2825 4000
+F 0 "#PWR0105" H 2825 3750 50  0001 C CNN
+F 1 "GND" H 2830 3827 50  0000 C CNN
+F 2 "" H 2825 4000 50  0001 C CNN
+F 3 "" H 2825 4000 50  0001 C CNN
+	1    2825 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2825 3950
+Wire Wire Line
+	2825 3950 2825 4000
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 63C5E9E4
+P 2275 4050
+F 0 "J3" H 2193 3725 50  0000 C CNN
+F 1 "PWR_CONN" H 2193 3816 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 2275 4050 50  0001 C CNN
+F 3 "~" H 2275 4050 50  0001 C CNN
+	1    2275 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 63C655F2
+P 2475 4050
+F 0 "#FLG01" H 2475 4125 50  0001 C CNN
+F 1 "PWR_FLAG" H 2475 4223 50  0000 C CNN
+F 2 "" H 2475 4050 50  0001 C CNN
+F 3 "~" H 2475 4050 50  0001 C CNN
+	1    2475 4050
+	-1   0    0    1   
+$EndComp
+Text GLabel 2525 4050 2    50   BiDi ~ 0
+Vin
+Wire Wire Line
+	2475 4050 2525 4050
+Connection ~ 2475 4050
+Wire Wire Line
+	2475 3950 2825 3950
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 63D73A14
+P 2825 4675
+F 0 "#FLG03" H 2825 4750 50  0001 C CNN
+F 1 "PWR_FLAG" H 2825 4848 50  0000 C CNN
+F 2 "" H 2825 4675 50  0001 C CNN
+F 3 "~" H 2825 4675 50  0001 C CNN
+	1    2825 4675
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 63D73A1A
+P 2825 4725
+F 0 "#PWR08" H 2825 4475 50  0001 C CNN
+F 1 "GND" H 2830 4552 50  0000 C CNN
+F 2 "" H 2825 4725 50  0001 C CNN
+F 3 "" H 2825 4725 50  0001 C CNN
+	1    2825 4725
+	1    0    0    -1  
+$EndComp
+Connection ~ 2825 4675
+Wire Wire Line
+	2825 4675 2825 4725
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 63D73A22
+P 2275 4775
+F 0 "J4" H 2193 4450 50  0000 C CNN
+F 1 "UNIQUE_PWR_CONN" H 2100 4550 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal" H 2275 4775 50  0001 C CNN
+F 3 "~" H 2275 4775 50  0001 C CNN
+	1    2275 4775
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 63D73A28
+P 2475 4775
+F 0 "#FLG02" H 2475 4850 50  0001 C CNN
+F 1 "PWR_FLAG" H 2475 4948 50  0000 C CNN
+F 2 "" H 2475 4775 50  0001 C CNN
+F 3 "~" H 2475 4775 50  0001 C CNN
+	1    2475 4775
+	-1   0    0    1   
+$EndComp
+Text GLabel 2525 4775 2    50   BiDi ~ 0
+Vin
+Wire Wire Line
+	2475 4775 2525 4775
+Connection ~ 2475 4775
+Wire Wire Line
+	2475 4675 2825 4675
 Wire Notes Line
-	2000 2750 900  2750
-Text Notes 1600 4700 0    50   ~ 0
+	2050 2200 3175 2200
+Text Notes 2725 5100 0    50   ~ 0
 Connectors\n
+Text Label 2475 2825 0    50   ~ 0
+FAULT
+Text Label 2475 2725 0    50   ~ 0
+FAULT
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 63D22F95
+P 2275 2725
+F 0 "J1" H 2200 2350 50  0000 C CNN
+F 1 "I/O" H 2200 2425 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 2275 2725 50  0001 C CNN
+F 3 "~" H 2275 2725 50  0001 C CNN
+	1    2275 2725
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	6200 4150 6200 5550
+Wire Notes Line
+	7350 5550 7350 4150
+Wire Notes Line
+	6200 5550 7350 5550
+Wire Notes Line
+	7525 4150 9325 4150
+Wire Notes Line
+	7525 5550 9325 5550
+Wire Notes Line
+	9325 4150 9325 5550
 $EndSCHEMATC
